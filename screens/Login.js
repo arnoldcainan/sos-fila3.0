@@ -12,7 +12,10 @@ export default function Login({navigation}) {
   const [password,setPassword] = useState(null)
 
   const entrar = () => {
-    navigation.navigate("Principal")
+    navigation.reset({
+        index: 0,
+        routes:[{name:"Principal"}]
+    })
   }
 
   return (
