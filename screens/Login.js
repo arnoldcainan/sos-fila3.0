@@ -21,8 +21,7 @@ export default function Login({navigation}) {
   return (
     <View style={styles.container}>
            
-      <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{width: 200, height: 200}} />
+           <Image source={require('../logo/logo.png')} />
 
       <Text h4 style={styles.text}> Bem vindo ao </Text>
       <Text h1 style={styles.text}>Sos filas</Text>
