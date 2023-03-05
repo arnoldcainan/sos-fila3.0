@@ -31,6 +31,9 @@ Na entrega 1 desenvolvemos o Figma da página e nesta entrega desenvolvemos o fl
     <img src="https://avatars.githubusercontent.com/u/79334817?v=4" width="100px" alt="Imagem do perfil da Fernanda"/>
     <br />
     <sub><b>Fernanda Giacomel</b></sub><br />:rocket:</td>
+    <td align="center"><a href="https://github.com/enricoasc">
+    <img src="https://avatars.githubusercontent.com/u/85110277?v=4" width="100px" alt="Imagem do perfil do Enrico"/>
+    <br />
     <sub><b>Enrico Augusto</b></sub><br />:rocket:</td>
     <td align="center"><a href="https://github.com/marleicampos">
     <img src="https://avatars.githubusercontent.com/u/111512348?v=4" width="100px" alt="Imagem do perfil da Marlei"/>
