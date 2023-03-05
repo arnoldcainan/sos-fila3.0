@@ -10,7 +10,7 @@ const Principal = ({ navigation, route }) => {
      
         <View style={styles.container}>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/icon.png')} />
+          <Image style={styles.logo} source={require('../assets/favicon.png')} />
             </TouchableOpacity>
           <View>
            <Text style={styles.titulo }> Hospital São Pedro</Text>
@@ -31,11 +31,16 @@ const Principal = ({ navigation, route }) => {
 
 const styles = StyleSheet.create({
   container: {
+    elevation: 3,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 30,
+    padding: 25,
     backgroundColor:'#BFEDFA',
+    marginBottom: 500,
+    shadowColor: '#444',
+    shadowOpacity: 2.5,
+    shadowRadius: 7,
   },
   titulo: {
     textAlign:'center',
@@ -61,7 +66,7 @@ const styles = StyleSheet.create({
     color: "blue",
 },
   logo: {
-    height: 140,
+    height: 100,
     width: 100,
   },
     coracao:{
