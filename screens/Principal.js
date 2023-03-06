@@ -12,7 +12,7 @@ return (
 
         <View style={styles.container}>
                 <Card>
-            <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
+            <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Card1')}>
           <Image style={styles.logo} source={require('../assets/icon.png')} />
                   <View>                 
            <Text style={styles.titulo }>Hospital São Pedro</Text>
@@ -33,8 +33,8 @@ return (
         </Card>
         
                <Card>
-            <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/icon.png')} />
+            <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Card1')}>
+          <Image style={styles.logo} source={require('../logo/logo.png')} />
         </TouchableOpacity>
                   <View>
            <Text style={styles.titulo }> Hospital São Pedro</Text>
@@ -51,7 +51,7 @@ return (
         </Card>
                <Card>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/icon.png')} />
+          <Image style={styles.logo} source={require('../logo/logo.png')} />
         </TouchableOpacity>
                   <View>
            <Text style={styles.titulo }> Hospital São Pedro</Text>
@@ -112,9 +112,12 @@ const styles = StyleSheet.create({
     width: 100,
   },
     coracao:{
-    marginTop: 30,
+    marginTop: 40,
     marginLeft: 220,
 },
+  back: {
+    backgroundColor: 'red',
+  }
 });
 
 export default Principal;
