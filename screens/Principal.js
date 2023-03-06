@@ -4,8 +4,6 @@ import { Text, Card, Button } from '@rneui/themed';
 import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
 
-
-
 const Principal = ({ navigation, route }) => {
 return (
   
@@ -15,7 +13,7 @@ return (
         <View style={styles.container}>
                 <Card>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+          <Image style={styles.logo} source={require('../assets/icon.png')} />
                   <View>                 
            <Text style={styles.titulo }>Hospital São Pedro</Text>
           
@@ -36,7 +34,7 @@ return (
         
                <Card>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+          <Image style={styles.logo} source={require('../assets/icon.png')} />
         </TouchableOpacity>
                   <View>
            <Text style={styles.titulo }> Hospital São Pedro</Text>
@@ -53,7 +51,7 @@ return (
         </Card>
                <Card>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+          <Image style={styles.logo} source={require('../assets/icon.png')} />
         </TouchableOpacity>
                   <View>
            <Text style={styles.titulo }> Hospital São Pedro</Text>
@@ -70,8 +68,10 @@ return (
         </Card> 
       </View>
     </ScrollView>
+
 );
-};
+}
+
 
 const styles = StyleSheet.create({
   container: {
