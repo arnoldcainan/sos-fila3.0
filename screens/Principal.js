@@ -1,54 +1,96 @@
-import * as React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, Card, Button } from '@rneui/themed';
 import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
 
-const Principal = ({ navigation, route }) => {
 
-  return (
+
+const Principal = ({ navigation, route }) => {
+return (
   
-     
+    <ScrollView>
+    
+
         <View style={styles.container}>
+                <Card>
             <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-          <Image style={styles.logo} source={require('../assets/favicon.png')} />
-            </TouchableOpacity>
-          <View>
-           <Text style={styles.titulo }> Hospital São Pedro</Text>
+          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+                  <View>                 
+           <Text style={styles.titulo }>Hospital São Pedro</Text>
+          
             <View style={styles.relogio}>
-              <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" /> 10 minutos  </Text>
+              <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
             </View>
             <View style={styles.distancia}>
-              <Text style={styles.paragraph}> Distancia              <Entypo name="location-pin" size={20} color="black" />10 minutos  </Text>
+              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+            </View>
+            
+            <View style={styles.coracao}>
+              <AntDesign name="hearto" size={20} color="black"/>             
+            </View>                                      
+          </View>
+                      </TouchableOpacity>
+
+        </Card>
+        
+               <Card>
+            <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
+          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+        </TouchableOpacity>
+                  <View>
+           <Text style={styles.titulo }> Hospital São Pedro</Text>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
             </View>
             <View style={styles.coracao}>
-              <AntDesign name="hearto" size={20} color="black"/>
-            </View>
+              <AntDesign name="hearto" size={20} color="black"/>             
+            </View>                                      
           </View>
-        </View>
-        
-  );
-}
+        </Card>
+               <Card>
+            <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
+          <Image style={styles.logo} source={require('../assets/OIP.jpg')} />
+        </TouchableOpacity>
+                  <View>
+           <Text style={styles.titulo }> Hospital São Pedro</Text>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+            </View>
+            <View style={styles.coracao}>
+              <AntDesign name="hearto" size={20} color="black"/>         
+            </View>                                      
+          </View>
+        </Card> 
+      </View>
+    </ScrollView>
+);
+};
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     elevation: 3,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 25,
+    padding: -40,
+    flexDirection: 'column',
     backgroundColor:'#BFEDFA',
-    marginBottom: 500,
     shadowColor: '#444',
     shadowOpacity: 2.5,
     shadowRadius: 7,
   },
   titulo: {
-    textAlign:'center',
+    textAlign:'right',
     textItems: 'center',
     justifyContent: 'center',
     padding: 30,
     fontWeight: 'bold',
-    marginTop: -40,
+    marginTop: -120,
   },
   paragraph: {
     textAlign:'right',
@@ -71,8 +113,8 @@ const styles = StyleSheet.create({
   },
     coracao:{
     marginTop: 30,
-    marginLeft: 180,
+    marginLeft: 220,
 },
 });
 
-export default Principal
+export default Principal;
