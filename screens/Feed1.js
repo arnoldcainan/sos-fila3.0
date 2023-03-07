@@ -61,13 +61,13 @@ const Feed1 = ({ navigation, route }) => {
         The idea with React Native Elements is more about component
         structure than actual design.
       </Text>
-      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}>  <AntDesign name="like2" size={20} color="black" /> 30  <FontAwesome name="commenting" size={24} color="black" /> 4</Text>
+      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}>  <AntDesign name="like2" size={20} color="black" /> 19  <FontAwesome name="commenting" size={24} color="black" /> 4</Text>
       </Card>
       <Card>
       <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
         <Image style={styles.image}
-          source={require('../logo/joel.png')}
-        />  Joel Miller</Text>
+          source={require('../logo/ellie.png')}
+        />  Ellie Williams</Text>
       <Card.Divider />
       <View style={styles.container}>
         <View>
@@ -105,12 +105,12 @@ const Feed1 = ({ navigation, route }) => {
           <View></View>
         </View>
       </View>
-      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital das clinicas</Text>
+      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital da Criança</Text>
       <Text style={{ marginBottom: 10 }}>
         The idea with React Native Elements is more about component
         structure than actual design.
       </Text>
-      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}>  <AntDesign name="like2" size={20} color="black" /> 30  <FontAwesome name="commenting" size={24} color="black" /> 4</Text>
+      <Text style={{ marginBottom: 10, fontWeight: 'bold', }}>  <AntDesign name="like2" size={20} color="black" /> 15  <FontAwesome name="commenting" size={24} color="black" /> 3</Text>
       </Card>
     </ScrollView>
   );

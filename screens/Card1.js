@@ -1,47 +1,108 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
+import {
+  View,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
+import { AntDesign } from '@expo/vector-icons'; //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
-
+import { Feather } from '@expo/vector-icons';
+import { Text, Card, Button } from '@rneui/themed';
 
 const Card1 = ({ navigation, route }) => {
-
   return (
-
-
-    <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-        <Image style={styles.logo} source={require('../assets/favicon.png')} />
-      </TouchableOpacity>
-      <View>
-        <Text style={styles.titulo}> Hospital São Pedro</Text>
-        <View style={styles.relogio}>
-          <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" /> 10 minutos  </Text>
+    <ScrollView>
+      <Card>
+        <View style={styles.container}>
+          <TouchableOpacity onPress={() => navigation.navigate('Feed1')}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/icon.png')}
+            />
+          </TouchableOpacity>
+          <View>
+            <Text style={styles.titulo}> Hospital São Pedro</Text>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>
+                {' '}
+                Tempo de espera{' '}
+                <AntDesign name="clockcircle" size={15} color="black" /> 10 min{' '}
+              </Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>
+                {' '}
+                Distancia <Entypo name="location-pin" size={20} color="black" />
+                10 min
+              </Text>
+            </View>
+            <View style={styles.icon}>
+              <Text>
+                <MaterialCommunityIcons
+                  name="face-woman"
+                  size={24}
+                  color="black"
+                />{' '}
+                Especialidades
+              </Text>
+            </View>
+            <View style={styles.icon}>
+              <Text>
+                <AntDesign name="calendar" size={24} color="black" /> Agendar
+                atendimento
+              </Text>
+            </View>
+            <View style={styles.icon}>
+              <Text>
+                <EvilIcons name="comment" size={24} color="black" /> Comentario
+              </Text>
+            </View>
+            <View style={styles.icon}>
+              <Text>
+                <Entypo name="location-pin" size={24} color="black" /> Como
+                chegar
+              </Text>
+            </View>
+            <View style={styles.icon}>
+              <Text>
+                <AntDesign name="phone" size={24} color="black" /> Contato
+              </Text>
+            </View>
+          </View>
         </View>
-        <View style={styles.distancia}>
-          <Text style={styles.paragraph}> Distancia              <Entypo name="location-pin" size={20} color="black" />10 minutos  </Text>
-        </View>
-        <View style={styles.especialidades}>
-          <Text><MaterialCommunityIcons name="face-woman" size={24} color="black" /> Especialidades</Text>
-        </View>
-        <View style={styles.agendar}>
-          <Text><AntDesign name="calendar" size={24} color="black" /> Agendar atendimento</Text>
-        </View>
-        <View style={styles.comentario}>
-          <Text><EvilIcons name="comment" size={24} color="black" /> Comentario</Text>
-        </View>
-        <View style={styles.comoChegar}>
-          <Text><Entypo name="location-pin" size={24} color="black" /> Como chegar</Text>
-        </View>
-        <View style={styles.contato}>
-          <Text><AntDesign name="phone" size={24} color="black" /> Contato</Text>
-        </View>
+      </Card>
+      <Text
+        style={{
+          marginBottom: 10,
+          fontWeight: 'bold',
+          fontSize: 14,
+          marginLeft: 40,
+        }}>
+        {' '}
+        FACILIDADES
+      </Text>
+      <View style={styles.icon2}>
+        <Text>
+          <Feather name="coffee" size={24} color="black" /> Lanchonete
+        </Text>
       </View>
-    </View>
+      <View style={styles.icon2}>
+        <Text>
+          <AntDesign name="car" size={24} color="black" /> Estacionamento - PAGO
+        </Text>
+      </View>
+      <View style={styles.icon2}>
+        <Text>
+          <AntDesign name="wifi" size={24} color="black" /> Wi-Fi-GRATUITO
+        </Text>
+      </View>
+    </ScrollView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -51,7 +112,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 25,
     backgroundColor: '#BFEDFA',
-    marginBottom: 500,
     shadowColor: '#444',
     shadowOpacity: 2.5,
     shadowRadius: 7,
@@ -59,47 +119,41 @@ const styles = StyleSheet.create({
   titulo: {
     textAlign: 'center',
     justifyContent: 'center',
-    padding: 30,
+    padding: 28,
     fontWeight: 'bold',
+    fontSize: 14,
+    marginLeft: 5,
+    marginRight: -15,
     marginTop: -40,
   },
   paragraph: {
     textAlign: 'right',
-    marginTop: 0,
-    fontSize: 12,
+    marginTop: -10,
+    fontSize: 10,
     fontWeight: 'bold',
   },
   //icone relogio
   relogio: {
-    color: "blue",
     marginBottom: 10,
     //icone local
   },
   distancia: {
-    color: "blue",
+    marginBottom: 10,
   },
   logo: {
-    height: 100,
-    width: 100,
-    marginTop: -160,
+    height: 90,
+    width: 90,
+    marginTop: -140,
   },
-  especialidades: {
+  icon: {
     alignItems: 'row',
-    marginTop: 80,
-    marginLeft: -100,
+    marginTop: 10,
+    marginLeft: -90,
   },
-  agendar: {
-    marginLeft: -100,
-  },
-  comentario: {
-    marginLeft: -100,
-  },
-  comoChegar: {
-    marginLeft: -100,
-  },
-  contato: {
-    marginLeft: -100,
+  icon2: {
+    marginTop: 10,
+    marginLeft: 50,
   },
 });
 
-export default Card1
+export default Card1;
