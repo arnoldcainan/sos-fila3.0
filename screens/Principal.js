@@ -33,7 +33,7 @@ return (
         </Card>
         
                <Card>
-            <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Card1')}>
+            <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Feed1')}>
           <Image style={styles.logo} source={require('../logo/logo.png')} />
         </TouchableOpacity>
                   <View>
