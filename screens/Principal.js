@@ -18,21 +18,22 @@ const Principal = ({ navigation, route }) => {
               style={styles.logo}
               source={require('../assets/favicon.png')}
             />
+
+            <View>
+              <Text style={styles.titulo}>Hospital São Pedro</Text>
+
+              <View style={styles.relogio}>
+                <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+              </View>
+              <View style={styles.distancia}>
+                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+              </View>
+
+              <View style={styles.coracao}>
+                <AntDesign name="hearto" size={20} color="black" />
+              </View>
+            </View>
           </TouchableOpacity>
-          <View>
-            <Text style={styles.titulo}>Hospital São Pedro</Text>
-
-            <View style={styles.relogio}>
-              <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-            </View>
-            <View style={styles.distancia}>
-              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-            </View>
-
-            <View style={styles.coracao}>
-              <AntDesign name="hearto" size={20} color="black" />
-            </View>
-          </View>
 
         </Card>
 
@@ -43,19 +44,20 @@ const Principal = ({ navigation, route }) => {
               style={styles.logo}
               source={require('../assets/favicon.png')}
             />
+
+            <View>
+              <Text style={styles.titulo}> Hospital São Pedro</Text>
+              <View style={styles.relogio}>
+                <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+              </View>
+              <View style={styles.distancia}>
+                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+              </View>
+              <View style={styles.coracao}>
+                <AntDesign name="hearto" size={20} color="black" />
+              </View>
+            </View>
           </TouchableOpacity>
-          <View>
-            <Text style={styles.titulo}> Hospital São Pedro</Text>
-            <View style={styles.relogio}>
-              <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-            </View>
-            <View style={styles.distancia}>
-              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-            </View>
-            <View style={styles.coracao}>
-              <AntDesign name="hearto" size={20} color="black" />
-            </View>
-          </View>
         </Card>
         <Card>
           <TouchableOpacity
@@ -64,19 +66,20 @@ const Principal = ({ navigation, route }) => {
               style={styles.logo}
               source={require('../assets/favicon.png')}
             />
+
+            <View>
+              <Text style={styles.titulo}> Hospital São Pedro</Text>
+              <View style={styles.relogio}>
+                <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+              </View>
+              <View style={styles.distancia}>
+                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+              </View>
+              <View style={styles.coracao}>
+                <AntDesign name="hearto" size={20} color="black" />
+              </View>
+            </View>
           </TouchableOpacity>
-          <View>
-            <Text style={styles.titulo}> Hospital São Pedro</Text>
-            <View style={styles.relogio}>
-              <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-            </View>
-            <View style={styles.distancia}>
-              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-            </View>
-            <View style={styles.coracao}>
-              <AntDesign name="hearto" size={20} color="black" />
-            </View>
-          </View>
         </Card>
       </View>
     </ScrollView>
