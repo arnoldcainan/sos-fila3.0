@@ -85,8 +85,7 @@ const styles = StyleSheet.create({
     shadowRadius: 7,
   },
   titulo: {
-    textAlign: 'right',
-    textItems: 'center',
+    textAlign: 'right',    
     justifyContent: 'center',
     padding: 30,
     fontWeight: 'bold',
