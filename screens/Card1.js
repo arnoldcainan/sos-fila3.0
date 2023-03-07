@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
   },
   titulo: {
     textAlign: 'center',
-    textItems: 'center',
     justifyContent: 'center',
     padding: 30,
     fontWeight: 'bold',
