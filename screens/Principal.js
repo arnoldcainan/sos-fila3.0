@@ -12,29 +12,37 @@ const Principal = ({ navigation, route }) => {
 
       <View style={styles.container}>
         <Card>
-          <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Card1')}>
-            <Image style={styles.logo} source={require('../assets/icon.png')} />
-            <View>
-              <Text style={styles.titulo}>Hospital São Pedro</Text>
-
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-              </View>
-
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="black" />
-              </View>
-            </View>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Feed1')}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/favicon.png')}
+            />
           </TouchableOpacity>
+          <View>
+            <Text style={styles.titulo}>Hospital São Pedro</Text>
+
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+            </View>
+
+            <View style={styles.coracao}>
+              <AntDesign name="hearto" size={20} color="black" />
+            </View>
+          </View>
 
         </Card>
 
         <Card>
-          <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Feed1')}>
-            <Image style={styles.logo} source={require('../logo/logo.png')} />
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Card1')}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/favicon.png')}
+            />
           </TouchableOpacity>
           <View>
             <Text style={styles.titulo}> Hospital São Pedro</Text>
@@ -50,8 +58,12 @@ const Principal = ({ navigation, route }) => {
           </View>
         </Card>
         <Card>
-          <TouchableOpacity onPress={() => navigation.navigate('Card1')}>
-            <Image style={styles.logo} source={require('../logo/logo.png')} />
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Card1')}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/favicon.png')}
+            />
           </TouchableOpacity>
           <View>
             <Text style={styles.titulo}> Hospital São Pedro</Text>
@@ -85,7 +97,7 @@ const styles = StyleSheet.create({
     shadowRadius: 7,
   },
   titulo: {
-    textAlign: 'right',    
+    textAlign: 'right',
     justifyContent: 'center',
     padding: 30,
     fontWeight: 'bold',
