@@ -18,7 +18,7 @@ function MyStack() {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Principal" component={Principal} /> 
       <Stack.Screen name="Card1" component={Card1} />            
-      <Stack.Screen name="Card1" component={Feed1} />                   
+      <Stack.Screen name="Feed1" component={Feed1} />                   
       
     </Stack.Navigator>
   );
