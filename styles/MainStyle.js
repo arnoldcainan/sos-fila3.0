@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#24757B',
+      backgroundColor: '#47B5BE',
       alignItems: 'center',
       justifyContent: 'center',
       color:"#red",
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     },
     inputView:{
         width:"80%",
-        backgroundColor:"#47B5BE",
+        backgroundColor:"#6cc4cb",
         borderRadius:25,
         height:60,
         margin:20,
