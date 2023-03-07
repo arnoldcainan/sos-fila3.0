@@ -14,10 +14,10 @@ import { Text, Card, Button } from '@rneui/themed';
 const Feed1 = ({ navigation, route }) => {
   return (
     <ScrollView>
-      <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>  <Image
-        style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: -10, }}
-        source={require('../assets/joel.png')}
-      /> Joel Miller</Text>
+      <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
+        <Image style={styles.image}
+          source={require('../logo/joel.png')}
+        />  Joel Miller</Text>
       <Card.Divider />
       <View style={styles.container}>
         <Card>
@@ -76,6 +76,13 @@ const styles = StyleSheet.create({
     height: 50,
     width: 50,
   },
-});
+  image: {
+    height: 33,
+    width: 31,
+    marginBottom: -10,
+    marginLeft: 10,
+  }
+},
+);
 
 export default Feed1;
