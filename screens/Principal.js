@@ -9,7 +9,6 @@ const Principal = ({ navigation, route }) => {
 
     <ScrollView>
 
-
       <View style={styles.container}>
         <Card>
           <TouchableOpacity
@@ -35,52 +34,9 @@ const Principal = ({ navigation, route }) => {
             </View>
           </TouchableOpacity>
 
-        </Card>
+        </Card>       
 
-        <Card>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Card1')}>
-            <Image
-              style={styles.logo}
-              source={require('../assets/favicon.png')}
-            />
-
-            <View>
-              <Text style={styles.titulo}> Hospital São Pedro</Text>
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}> Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-              </View>
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="black" />
-              </View>
-            </View>
-          </TouchableOpacity>
-        </Card>
-        <Card>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Card1')}>
-            <Image
-              style={styles.logo}
-              source={require('../assets/favicon.png')}
-            />
-
-            <View>
-              <Text style={styles.titulo}> Hospital São Pedro</Text>
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
-              </View>
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="black" />
-              </View>
-            </View>
-          </TouchableOpacity>
-        </Card>
+        
       </View>
     </ScrollView>
 
@@ -92,12 +48,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     elevation: 3,
-    padding: -40,
+    padding: 15,
     flexDirection: 'column',
     backgroundColor: '#BFEDFA',
     shadowColor: '#444',
     shadowOpacity: 2.5,
     shadowRadius: 7,
+    justifyContent: 'space-between',
+    
+    
   },
   titulo: {
     textAlign: 'right',
@@ -127,10 +86,12 @@ const styles = StyleSheet.create({
   },
   coracao: {
     marginTop: 40,
-    marginLeft: 220,
+    alignItems: 'flex-end',
+
   },
   back: {
     backgroundColor: 'red',
+
   }
 });
 
