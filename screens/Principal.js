@@ -34,6 +34,31 @@ const Principal = ({ navigation, route }) => {
             </View>
           </TouchableOpacity>
 
+        </Card>
+        <Card>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Feed1')}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/favicon.png')}
+            />
+
+            <View>
+              <Text style={styles.titulo}>Hospital São Pedro</Text>
+
+              <View style={styles.relogio}>
+                <Text style={styles.paragraph}>Tempo de espera <AntDesign name="clockcircle" size={15} color="black" />10 min</Text>
+              </View>
+              <View style={styles.distancia}>
+                <Text style={styles.paragraph}>Distancia<Entypo name="location-pin" size={20} color="black" />10 km</Text>
+              </View>
+
+              <View style={styles.coracao}>
+                <AntDesign name="hearto" size={20} color="black" />
+              </View>
+            </View>
+          </TouchableOpacity>
+
         </Card>       
 
         
@@ -48,9 +73,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     elevation: 3,
-    padding: 15,
+    paddingTop: 15,
+    paddingBottom: 15,
     flexDirection: 'column',
-    backgroundColor: '#BFEDFA',
+    backgroundColor: '#EAF2F2',
     shadowColor: '#444',
     shadowOpacity: 2.5,
     shadowRadius: 7,
