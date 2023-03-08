@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Image } from 'react-native';
+import { View, Image,   StatusBar, SafeAreaView, } from 'react-native';
 import { Button, Input, Text } from 'react-native-elements';
 import styles from './styles/MainStyle';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -16,23 +16,23 @@ const Tab = createBottomTabNavigator()
 function Tabs() {
   return (
       <Tab.Navigator>
-      <Tab.Screen name="Principal" component={Principal}/> 
-      <Tab.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }} />            
+      <Tab.Screen name="Principal" component={Principal}/>    
       <Tab.Screen name="Feed1" component={Feed1} options={{ title: 'Hospital Feed' }}  />         
     </Tab.Navigator>
   )
 }
 
-  export default function App() {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }} />    
-        <Stack.Screen name="Principal" component={Tabs} options={{ title: 'Principal' }} />    
-        <Stack.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }} />            
-        <Stack.Screen name="Feed1" component={Feed1} options={{ title: 'Hospital Feed' }}  />   
-        </Stack.Navigator>
-      </NavigationContainer>
-    );
-  }
-  
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }} />    
+      <Stack.Screen name="Principal" component={Tabs} options={{ title: 'Principal' }} />    
+      <Stack.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }} />            
+      <Stack.Screen name="Feed1" component={Feed1} options={{ title: 'Hospital Feed' }}  />   
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+
