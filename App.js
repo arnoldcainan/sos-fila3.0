@@ -18,7 +18,7 @@ function MyStack() {
       <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }}  />    
       <Stack.Screen name="Principal" component={Principal} options={{ title: 'Principal' }}  />    
       <Stack.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }}  />              
-      <Stack.Screen name="Feed1w" component={Feed1} options={{ title: 'Hospital Feed' }}  />                      
+      <Stack.Screen name="Feed1" component={Feed1} options={{ title: 'Hospital Feed' }}  />                      
       
     </Stack.Navigator>
   );

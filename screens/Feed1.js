@@ -121,6 +121,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: '#444',
+    shadowOpacity: 0.5,
+    shadowRadius: 4,
   },
   logo: {
     marginRight:10,
