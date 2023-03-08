@@ -15,10 +15,10 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Principal" component={Principal} /> 
-      <Stack.Screen name="Hospital São Pedro" component={Card1} />            
-      <Stack.Screen name="Hospital Feed" component={Feed1} />                   
+      <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }}  />    
+      <Stack.Screen name="Principal" component={Principal} options={{ title: 'Principal' }}  />    
+      <Stack.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }}  />              
+      <Stack.Screen name="Feed1w" component={Feed1} options={{ title: 'Hospital Feed' }}  />                      
       
     </Stack.Navigator>
   );
