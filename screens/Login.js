@@ -14,39 +14,39 @@ export default function Login({ navigation }) {
   const [errorEmail, setErrorEmail] = useState(null)
   const [errorPassword, setErrorPassword] = useState(null)
 
-  const validar = ()=> {
+  const validar = () => {
     let error = false
     setErrorEmail(null)
     setErrorPassword(null)
 
     //verifica atraves de REGEX formatação do email (ex teste@teste.com)
     const re =
-  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 
 
-    if (!re.test(String(email).toLowerCase())){
+    if (!re.test(String(email).toLowerCase())) {
       setErrorEmail('Preencha seu email corretamente')
       error = true
     }
 
-     if (password == null){
+    if (password == null) {
       setErrorPassword('Preencha sua senha corretamente')
       error = true
     }
 
-    
+
     return !error
 
   }
- 
+
 
   const entrar = () => {
-    if(validar())
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "Principal" }]
-    })
+    if (validar())
+      navigation.reset({
+        index: 0,
+        routes: [{ name: "Principal" }]
+      })
   }
 
   return (
@@ -61,8 +61,8 @@ export default function Login({ navigation }) {
         placeholderTextColor="#24757B"
         leftIcon={{ type: 'font-awesome', name: 'envelope' }}
         onChangeText={value => {
-        setEmail(value)
-        setErrorEmail(null)
+          setEmail(value)
+          setErrorEmail(null)
         }}
         keyboardType='email-address'
         errorMessage={errorEmail}

@@ -13,7 +13,7 @@ import { EvilIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { Text, Card, Button } from '@rneui/themed';
 
-const Card1 = ({ navigation, route }) => {
+const Card2 = ({ navigation, route }) => {
   return (
     <ScrollView>
       <Card>
@@ -21,22 +21,22 @@ const Card1 = ({ navigation, route }) => {
           <TouchableOpacity onPress={() => navigation.navigate('Principal')}>
             <Image
               style={styles.logo}
-              source={require('../logo/Hospital.jpg')}
+              source={require('../logo/Hospital2.jpg')}
             />
           </TouchableOpacity>
           <View>
-            <Text style={styles.titulo}>{' Hospital São Pedro '}</Text>
+            <Text style={styles.titulo}>{' Hospital Caridade '}</Text>
             <View style={styles.relogio}>
               <Text style={styles.paragraph}>
                 {' Tempo de espera '}
-                <AntDesign name="clockcircle" size={15} color="black" /> {' 10 min '}
+                <AntDesign name="clockcircle" size={15} color="black" /> {' 45 min '}
               </Text>
             </View>
             <View style={styles.distancia}>
               <Text style={styles.paragraph}>
                 {' Distancia '}
                  <Entypo name="location-pin" size={20} color="black" />
-                 {' 5 km '}
+                 {' 10 km '}
               </Text>
             </View>
             <View style={styles.icon}>
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 25,
-    backgroundColor: '#90B7D6',
+    backgroundColor: '#D596EB',
     shadowColor: '#444',
     shadowOpacity: 2.5,
     shadowRadius: 7,
@@ -152,4 +152,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card1;
+export default Card2;
