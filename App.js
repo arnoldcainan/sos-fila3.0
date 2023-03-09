@@ -8,7 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Login from './screens/Login';
 import Principal from './screens/Principal';
 import Card1 from './screens/Card1';
-import Feed1 from './screens/Feed1';w
+import Feed1 from './screens/Feed1';
 
 
 const Stack = createStackNavigator();
