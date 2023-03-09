@@ -4,6 +4,7 @@ import { Text, Card, Button } from '@rneui/themed';
 import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
 
+
 const Principal = ({ navigation, route }) => {
   return (
 
@@ -12,7 +13,7 @@ const Principal = ({ navigation, route }) => {
       <View style={styles.container}>
         <Card>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Feed1')}>
+            onPress={() => navigation.navigate('Card1')}>
             <Image
               style={styles.logo}
               source={require('../assets/favicon.png')}
