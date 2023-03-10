@@ -13,6 +13,7 @@ import Card3 from './screens/Card3';
 import Feed1 from './screens/Feed1';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import Cadastro from './screens/Cadastro';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -43,6 +44,9 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: true }}>
         <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }} />
         <Stack.Screen name="Principal" component={Tabs} options={{ title: 'Principal' }} />
+
+        <Stack.Screen name="Cadastro" component={Cadastro} options={{ title: 'Cadastro' }} />
+
         <Stack.Screen name="Feed1" component={Tabs} options={{ title: 'Hospital Feed' }} />
         <Stack.Screen name="Card1" component={Card1} options={{ title: 'Hospital São Pedro' }} />
         <Stack.Screen name="Card2" component={Card2} options={{ title: 'Hospital Caridade' }} />

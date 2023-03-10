@@ -6,11 +6,18 @@ import styles from '../styles/MainStyle';
 
 
 
-export default function Login({ navigation }) {
+export default function Cadastro({ navigation }) {
+
+  const [nome, setNome] = useState(null)
 
   const [email, setEmail] = useState(null)
   const [password, setPassword] = useState(null)
+  
+  
+  
   //logica de login
+
+  const [errorNome, setErrorNome] = useState(null)
   const [errorEmail, setErrorEmail] = useState(null)
   const [errorPassword, setErrorPassword] = useState(null)
 
@@ -18,6 +25,7 @@ export default function Login({ navigation }) {
     let error = false
     setErrorEmail(null)
     setErrorPassword(null)
+    setErrorNome(null)
 
     //verifica atraves de REGEX formatação do email (ex teste@teste.com)
     const re =
@@ -34,6 +42,10 @@ export default function Login({ navigation }) {
       setErrorPassword('Preencha sua senha corretamente')
       error = true
     }
+    if (nome == null) {
+        setErrorNome('Preencha seu nome corretamente')
+        error = true
+      }
 
 
     return !error
@@ -53,54 +65,66 @@ export default function Login({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
-
-      <Image source={require('../logo/logo.png')} />
-
-      <Text h4 style={styles.text}> Bem vindo ao </Text>
-      <Text h1 style={styles.text}>Sos filas</Text>
+    <View style={styles.container}>      
+      
+      <Image source={require('../logo/user.png')} />
+      <Text h2 style={styles.text}> Crie sua Conta </Text>
+      
       <Input style={styles.inputView}
-        placeholder="  E-mail"
+        placeholder="  Seu nome"
         placeholderTextColor="#24757B"
-        leftIcon={{ type: 'font-awesome', name: 'envelope' }}
+        onChangeText={value => {
+          setNome(value)
+          setErrorNome(null)
+        }}
+        keyboardType='email-address'
+        errorMessage={errorNome}
+        />
+      
+      <Input style={styles.inputView}
+        placeholder="  Seu e-mail"
+        placeholderTextColor="#24757B"
         onChangeText={value => {
           setEmail(value)
           setErrorEmail(null)
         }}
         keyboardType='email-address'
         errorMessage={errorEmail}
-      />
-      <Input style={styles.inputView}
-        placeholder="Senha"
+        />
+
+        <Input style={styles.inputView}
+        placeholder="Sua senha"
         placeholderTextColor="#24757B"
-        leftIcon={{ type: 'font-awesome', name: 'lock' }}
         onChangeText={value => {
           setPassword(value)
           setErrorPassword(null)
         }}
         secureTextEntry={true}
         errorMessage={errorPassword}
-      />
+        />
+
+        <Input style={styles.inputView}
+        placeholder="Confirmar senha"
+        placeholderTextColor="#24757B"
+        onChangeText={value => {
+          setPassword(value)
+          setErrorPassword(null)
+        }}
+        secureTextEntry={true}
+        errorMessage={errorPassword}
+        />
+
+      
 
       <Button style={styles.button}
-        title="ENTRAR"
+      
+        title="Cadastrar"
 
         onPress={() => entrar()}
       />
-
-      <Text style={styles.text}> Não tem uma conta?</Text>
-
-      <Button style={styles.button}
-        title="Cadastre-se"
-
-        onPress={() => cadastrar()}
-      />
-
-      
       
 
-      <Text style={styles.text}>Desenvolvido por:</Text>
-      <Text style={styles.text}>Fotos</Text>
+      
 
 
     </View>
