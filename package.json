@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    
     "@react-native-masked-view/masked-view": "^0.2.8",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/material-bottom-tabs": "^6.2.15",
@@ -16,7 +17,7 @@
     "@react-navigation/stack": "^6.3.16",
     "@rneui/themed": "^4.0.0-rc.7",
     "expo": "^48.0.6",
-    "expo-status-bar": "~1.4.4",
+    "expo-status-bar": "~1.4.4",    
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.3",
@@ -26,7 +27,7 @@
     "react-native-safe-area-context": "^4.5.0",
     "react-native-screens": "~3.20.0",
     "react-native-vector-icons": "^9.2.0",
-    "react-native-web": "~0.18.10",
+    "react-native-web": "~0.18.10"    
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
