@@ -4,7 +4,6 @@ import {
   ScrollView,
   StyleSheet,
   Image,
-  TouchableOpacity,
 } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; //icone relogio,coracao
@@ -22,37 +21,26 @@ const Feed1 = ({ navigation, route }) => {
         <Card.Divider />
         <View style={styles.container}>
           <View>
-            <TouchableOpacity
-              style={styles.card}
-              onPress={() => navigation.navigate('Card1')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Estacionamento.jpg')}
               />
               <View></View>
-            </TouchableOpacity>
           </View>
 
           <View>
-            <TouchableOpacity
-              style={styles.card}
-              onPress={() => navigation.navigate('Card1')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Recepcao.jpg')}
               />
-            </TouchableOpacity>
             <View></View>
           </View>
 
           <View>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('Card1')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Vazio.jpg')}
               />
-            </TouchableOpacity>
             <View></View>
           </View>
         </View>
@@ -71,35 +59,24 @@ const Feed1 = ({ navigation, route }) => {
         <Card.Divider />
         <View style={styles.container}>
           <View>
-            <TouchableOpacity
-              style={styles.card}
-              onPress={() => navigation.navigate('Card2')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Lanchonete.jpg')}
               />
-            </TouchableOpacity>
           </View>
 
           <View>
-            <TouchableOpacity
-              style={styles.card}
-              onPress={() => navigation.navigate('Card2')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Jardim.jpg')}
               />
-            </TouchableOpacity>
           </View>
 
           <View>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('Card2')}>
               <Image
                 style={styles.logo}
                 source={require('../logo/Kids.jpg')}
               />
-            </TouchableOpacity>
           </View>
         </View>
         <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital da Criança</Text>
