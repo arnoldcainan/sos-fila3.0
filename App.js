@@ -49,12 +49,12 @@ export default function App() {
           component={Card1}
           options={{ title: 'Hospital São Pedro' }}
         />
-                <Stack.Screen
+        <Stack.Screen
           name="Feed2"
           component={Feed2}
           options={{ title: 'UPA Saúde' }}
         />
-                <Stack.Screen
+        <Stack.Screen
           name="Feed3"
           component={Feed3}
           options={{ title: 'UPA Saúde' }}

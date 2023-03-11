@@ -16,32 +16,31 @@ const Feed1 = ({ navigation, route }) => {
       <Card>
         <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
           <Image style={styles.image}
-            source={require('../logo/joel.png')}
-          />  Joel Miller</Text>
+            source={require('../logo/pessoas/joel.png')}
+          />  Joel Miller </Text>
         <Card.Divider />
         <View style={styles.container}>
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Estacionamento.jpg')}
-              />
-              <View></View>
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Estacionamento.jpg')}
+            />
+
           </View>
 
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Recepcao.jpg')}
-              />
-            <View></View>
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Recepcao.jpg')}
+            />
+
           </View>
 
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Vazio.jpg')}
-              />
-            <View></View>
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Vazio.jpg')}
+            />
           </View>
         </View>
         <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital das clinicas</Text>
@@ -54,29 +53,29 @@ const Feed1 = ({ navigation, route }) => {
       <Card>
         <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
           <Image style={styles.image}
-            source={require('../logo/ellie.png')}
+            source={require('../logo/pessoas/ellie.png')}
           />  Ellie Williams</Text>
         <Card.Divider />
         <View style={styles.container}>
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Lanchonete.jpg')}
-              />
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Lanchonete.jpg')}
+            />
           </View>
 
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Jardim.jpg')}
-              />
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Jardim.jpg')}
+            />
           </View>
 
           <View>
-              <Image
-                style={styles.logo}
-                source={require('../logo/Kids.jpg')}
-              />
+            <Image
+              style={styles.logo}
+              source={require('../logo/fotos/Kids.jpg')}
+            />
           </View>
         </View>
         <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital da Criança</Text>

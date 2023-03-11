@@ -48,7 +48,7 @@ export default function Login({ navigation }) {
         routes: [{ name: "Principal" }]
       })
   }
-  const cadastrar = () =>{
+  const cadastrar = () => {
     navigation.navigate("Cadastro")
   }
 
@@ -96,8 +96,8 @@ export default function Login({ navigation }) {
         onPress={() => cadastrar()}
       />
 
-      
-      
+
+
 
       <Text style={styles.text}>Desenvolvido por:</Text>
       <Text style={styles.text}>Fotos</Text>

@@ -21,7 +21,7 @@ const Card3 = ({ navigation, route }) => {
           <TouchableOpacity onPress={() => navigation.navigate('Feed3')}>
             <Image
               style={styles.logo}
-              source={require('../logo/Hospital3.jpg')}
+              source={require('../logo/hospital/Hospital3.jpg')}
             />
           </TouchableOpacity>
           <View>
@@ -35,8 +35,8 @@ const Card3 = ({ navigation, route }) => {
             <View style={styles.distancia}>
               <Text style={styles.paragraph}>
                 {' Distancia '}
-                 <Entypo name="location-pin" size={20} color="black" />
-                 {' 6.5 km '}
+                <Entypo name="location-pin" size={20} color="black" />
+                {' 6.5 km '}
               </Text>
             </View>
             <View style={styles.icon}>
@@ -80,7 +80,7 @@ const Card3 = ({ navigation, route }) => {
           marginLeft: 40,
         }}>
         {' FACILIDADES '}
-        
+
       </Text>
       <View style={styles.icon2}>
         <Text>
