@@ -42,7 +42,7 @@ export default function App() {
         <Stack.Screen
           name="Feed1"
           component={Feed1}
-          options={{ title: 'Hospital Feed' }}
+          options={{ title: 'Hospital Sáo Pedro' }}
         />
         <Stack.Screen
           name="Card1"
@@ -52,7 +52,7 @@ export default function App() {
         <Stack.Screen
           name="Feed2"
           component={Feed2}
-          options={{ title: 'UPA Saúde' }}
+          options={{ title: 'Hospital Caridade' }}
         />
         <Stack.Screen
           name="Feed3"
