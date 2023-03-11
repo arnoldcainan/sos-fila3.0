@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     marginTop: -140,
   },
   icon: {
-    alignItems: 'row',
+    
     marginTop: 10,
     marginLeft: -120,
   },
