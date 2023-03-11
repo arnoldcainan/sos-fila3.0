@@ -18,7 +18,7 @@ const Card3 = ({ navigation, route }) => {
     <ScrollView>
       <Card>
         <View style={styles.container}>
-          <TouchableOpacity onPress={() => navigation.navigate('Principal')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Feed3')}>
             <Image
               style={styles.logo}
               source={require('../logo/Hospital3.jpg')}
