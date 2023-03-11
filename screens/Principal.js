@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, ScrollView, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native';
 import { Text, Card, Button } from '@rneui/themed';
 import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
@@ -16,86 +16,69 @@ const Principal = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Card1')}>
             <Image
               style={styles.logo}
-              source={require('../logo/hospital/Hospital.jpg')}/>
-
-
+              source={require('../logo/hospital/Hospital.jpg')} />
             <View>
-            
               <Text style={styles.titulo}>Hospital São Pedro</Text>
             </View>
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}>{' Tempo de espera '}
-                  <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>{' Distância '}
-                  <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
-              </View>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>{' Tempo de espera '}
+                <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>{' Distância '}
+                <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
+            </View>
           </TouchableOpacity>
-
-          
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="red" />
-              </View>
-
+          <View style={styles.coracao}>
+            <AntDesign name="hearto" size={20} color="red" />
+          </View>
         </Card>
-         <Card>
+        <Card>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Card1')}>
+            onPress={() => navigation.navigate('Card2')}>
             <Image
               style={styles.logo}
-              source={require('../logo/hospital/Hospital.jpg')}/>
-
-
+              source={require('../logo/hospital/Hospital2.jpg')} />
             <View>
-              <Text style={styles.titulo}>Hospital São Pedro</Text>
+              <Text style={styles.titulo}>Hospital Caridade</Text>
             </View>
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}>{' Tempo de espera '}
-                  <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>{' Distância '}
-                  <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
-              </View>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>{' Tempo de espera '}
+                <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>{' Distância '}
+                <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
+            </View>
           </TouchableOpacity>
-
-          
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="red" />
-              </View>
-
+          <View style={styles.coracao}>
+            <AntDesign name="hearto" size={20} color="red" />
+          </View>
         </Card>
-
-         <Card>
+        <Card>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Card1')}>
+            onPress={() => navigation.navigate('Card3')}>
             <Image
               style={styles.logo}
-              source={require('../logo/hospital/Hospital.jpg')}/>
-
-
+              source={require('../logo/hospital/Hospital3.jpg')} />
             <View>
-              <Text style={styles.titulo}>Hospital São Pedro</Text>
+              <Text style={styles.titulo}>UPA Saude</Text>
             </View>
-              <View style={styles.relogio}>
-                <Text style={styles.paragraph}>{' Tempo de espera '}
-                  <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
-              </View>
-              <View style={styles.distancia}>
-                <Text style={styles.paragraph}>{' Distância '}
-                  <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
-              </View>
+            <View style={styles.relogio}>
+              <Text style={styles.paragraph}>{' Tempo de espera '}
+                <AntDesign name="clockcircle" size={15} color="black" />{' 10 min '}</Text>
+            </View>
+            <View style={styles.distancia}>
+              <Text style={styles.paragraph}>{' Distância '}
+                <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
+            </View>
           </TouchableOpacity>
-
-              <View style={styles.coracao}>
-                <AntDesign name="hearto" size={20} color="red" />
-              </View>
+          <View style={styles.coracao}>
+            <AntDesign name="hearto" size={20} color="red" />
+          </View>
         </Card>
-
       </View>
     </ScrollView>
-
   );
 }
 
@@ -126,7 +109,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     fontSize: 12,
     fontWeight: 'bold',
-        marginTop: -60,
+    marginTop: -60,
 
   },
   //icone relogio

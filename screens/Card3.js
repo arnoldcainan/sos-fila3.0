@@ -55,9 +55,11 @@ const Card3 = ({ navigation, route }) => {
               </Text>
             </View>
             <View style={styles.icon}>
-              <Text>
-                <EvilIcons name="comment" size={24} color="black" /> {' Comentário '}
-              </Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Feed1')}>
+                <Text>
+                  <EvilIcons name="comment" size={24} color="black" /> {' Veja aqui os comentários '}
+                </Text>
+              </TouchableOpacity>
             </View>
             <View style={styles.icon}>
               <Text>
@@ -142,7 +144,7 @@ const styles = StyleSheet.create({
     marginTop: -140,
   },
   icon: {
-    
+
     marginTop: 10,
     marginLeft: -120,
   },
