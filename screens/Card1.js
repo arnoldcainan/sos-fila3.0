@@ -46,7 +46,6 @@ const Card1 = ({ navigation, route }) => {
                   size={24}
                   color="black"
                 />{' Especialidades '}
-
               </Text>
             </View>
             <View style={styles.icon}>
@@ -55,9 +54,11 @@ const Card1 = ({ navigation, route }) => {
               </Text>
             </View>
             <View style={styles.icon}>
-              <Text>
-                <EvilIcons name="comment" size={24} color="black" /> {' Comentário '}
-              </Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Feed1')}>
+                <Text>
+                  <EvilIcons name="comment" size={24} color="black" /> {' Veja aqui os comentários '}
+                </Text>
+              </TouchableOpacity>
             </View>
             <View style={styles.icon}>
               <Text>
@@ -80,7 +81,6 @@ const Card1 = ({ navigation, route }) => {
           marginLeft: 40,
         }}>
         {' FACILIDADES '}
-
       </Text>
       <View style={styles.icon2}>
         <Text>
@@ -100,7 +100,6 @@ const Card1 = ({ navigation, route }) => {
     </ScrollView>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     elevation: 3,
@@ -150,5 +149,4 @@ const styles = StyleSheet.create({
     marginLeft: 50,
   },
 });
-
 export default Card1;
