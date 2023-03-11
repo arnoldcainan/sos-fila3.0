@@ -23,15 +23,21 @@ const Feed1 = ({ navigation, route }) => {
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Estacionamento.jpg')}
+                            source={require('../logo/fotos/Lanchonete.jpg')}
                         />
+                    </View>
+
+                    <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Recepcao.jpg')}
+                            source={require('../logo/fotos/Jardim.jpg')}
                         />
+                    </View>
+
+                    <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Vazio.jpg')}
+                            source={require('../logo/fotos/Kids.jpg')}
                         />
                     </View>
                 </View>
