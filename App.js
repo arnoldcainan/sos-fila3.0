@@ -11,6 +11,8 @@ import Card1 from './screens/Card1';
 import Card2 from './screens/Card2';
 import Card3 from './screens/Card3';
 import Feed1 from './screens/Feed1';
+import Feed2 from './screens/Feed2';
+import Feed3 from './screens/Feed3';
 
 import Cadastro from './screens/Cadastro';
 
@@ -46,6 +48,16 @@ export default function App() {
           name="Card1"
           component={Card1}
           options={{ title: 'Hospital São Pedro' }}
+        />
+                <Stack.Screen
+          name="Feed2"
+          component={Feed2}
+          options={{ title: 'UPA Saúde' }}
+        />
+                <Stack.Screen
+          name="Feed3"
+          component={Feed3}
+          options={{ title: 'UPA Saúde' }}
         />
         <Stack.Screen
           name="Card2"
