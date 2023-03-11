@@ -12,9 +12,9 @@ export default function Cadastro({ navigation }) {
 
   const [email, setEmail] = useState(null)
   const [password, setPassword] = useState(null)
-  
-  
-  
+
+
+
   //logica de login
 
   const [errorNome, setErrorNome] = useState(null)
@@ -43,9 +43,9 @@ export default function Cadastro({ navigation }) {
       error = true
     }
     if (nome == null) {
-        setErrorNome('Preencha seu nome corretamente')
-        error = true
-      }
+      setErrorNome('Preencha seu nome corretamente')
+      error = true
+    }
 
 
     return !error
@@ -60,16 +60,16 @@ export default function Cadastro({ navigation }) {
         routes: [{ name: "Principal" }]
       })
   }
-  const cadastrar = () =>{
+  const cadastrar = () => {
     navigation.navigate("Cadastro")
   }
 
   return (
-    <View style={styles.container}>      
-      
+    <View style={styles.container}>
+
       <Image source={require('../logo/user.png')} />
       <Text h2 style={styles.text}> Crie sua Conta </Text>
-      
+
       <Input style={styles.inputView}
         placeholder="  Seu nome"
         placeholderTextColor="#24757B"
@@ -79,8 +79,8 @@ export default function Cadastro({ navigation }) {
         }}
         keyboardType='email-address'
         errorMessage={errorNome}
-        />
-      
+      />
+
       <Input style={styles.inputView}
         placeholder="  Seu e-mail"
         placeholderTextColor="#24757B"
@@ -90,9 +90,9 @@ export default function Cadastro({ navigation }) {
         }}
         keyboardType='email-address'
         errorMessage={errorEmail}
-        />
+      />
 
-        <Input style={styles.inputView}
+      <Input style={styles.inputView}
         placeholder="Sua senha"
         placeholderTextColor="#24757B"
         onChangeText={value => {
@@ -101,9 +101,9 @@ export default function Cadastro({ navigation }) {
         }}
         secureTextEntry={true}
         errorMessage={errorPassword}
-        />
+      />
 
-        <Input style={styles.inputView}
+      <Input style={styles.inputView}
         placeholder="Confirmar senha"
         placeholderTextColor="#24757B"
         onChangeText={value => {
@@ -112,19 +112,19 @@ export default function Cadastro({ navigation }) {
         }}
         secureTextEntry={true}
         errorMessage={errorPassword}
-        />
+      />
 
-      
+
 
       <Button style={styles.button}
-      
+
         title="Cadastrar"
 
         onPress={() => entrar()}
       />
-      
 
-      
+
+
 
 
     </View>

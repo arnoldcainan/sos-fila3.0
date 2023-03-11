@@ -16,7 +16,7 @@ const Principal = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Card1')}>
             <Image
               style={styles.logo}
-              source={require('../logo/Hospital.jpg')}
+              source={require('../logo/hospital/Hospital.jpg')}
             />
 
             <View>
@@ -43,7 +43,7 @@ const Principal = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Card2')}>
             <Image
               style={styles.logo}
-              source={require('../logo/Hospital2.jpg')}
+              source={require('../logo/hospital/Hospital2.jpg')}
             />
 
             <View>
@@ -70,7 +70,7 @@ const Principal = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Card3')}>
             <Image
               style={styles.logo}
-              source={require('../logo/Hospital3.jpg')}
+              source={require('../logo/hospital/Hospital3.jpg')}
             />
 
             <View>
