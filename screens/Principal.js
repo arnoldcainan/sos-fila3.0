@@ -29,10 +29,11 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-          <View style={styles.coracao}>
-            <AntDesign name="hearto" size={20} color="red" />
-          </View>
+
         </Card>
+        <View style={styles.coracao}>
+          <AntDesign name="hearto" size={20} color="red" />
+        </View>
         <Card>
           <TouchableOpacity
             onPress={() => navigation.navigate('Card2')}>
@@ -51,10 +52,11 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-          <View style={styles.coracao}>
-            <AntDesign name="hearto" size={20} color="red" />
-          </View>
+
         </Card>
+        <View style={styles.coracao}>
+          <AntDesign name="hearto" size={20} color="red" />
+        </View>
         <Card>
           <TouchableOpacity
             onPress={() => navigation.navigate('Card3')}>
@@ -73,10 +75,11 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-          <View style={styles.coracao}>
-            <AntDesign name="hearto" size={20} color="red" />
-          </View>
+
         </Card>
+        <View style={styles.coracao}>
+          <AntDesign name="hearto" size={20} color="red" />
+        </View>
       </View>
     </ScrollView>
   );
