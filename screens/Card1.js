@@ -21,8 +21,7 @@ const Card1 = ({ navigation, route }) => {
           <TouchableOpacity onPress={() => navigation.navigate('Feed1')}>
             <Image
               style={styles.logo}
-              source={require('../logo/hospital/Hospital.jpg')}
-            />
+              source={require('../logo/hospital/Hospital.jpg')} />
           </TouchableOpacity>
           <View>
             <Text style={styles.titulo}>{' Hospital São Pedro '}</Text>

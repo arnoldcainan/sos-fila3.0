@@ -31,17 +31,10 @@ export default function App() {
           component={Principal}
           options={{ title: 'Principal' }}
         />
-
         <Stack.Screen
           name="Cadastro"
           component={Cadastro}
           options={{ title: 'Cadastro' }}
-        />
-
-        <Stack.Screen
-          name="Feed1"
-          component={Feed1}
-          options={{ title: 'Hospital Feed' }}
         />
         <Stack.Screen
           name="Card1"
@@ -49,14 +42,9 @@ export default function App() {
           options={{ title: 'Hospital São Pedro' }}
         />
         <Stack.Screen
-          name="Feed2"
-          component={Feed2}
-          options={{ title: 'UPA Saúde' }}
-        />
-        <Stack.Screen
-          name="Feed3"
-          component={Feed3}
-          options={{ title: 'UPA Saúde' }}
+          name="Feed1"
+          component={Feed1}
+          options={{ title: 'Hospital Feed' }}
         />
         <Stack.Screen
           name="Card2"
@@ -64,8 +52,18 @@ export default function App() {
           options={{ title: 'Hospital Caridade' }}
         />
         <Stack.Screen
+          name="Feed2"
+          component={Feed2}
+          options={{ title: 'Hospital Caridade' }}
+        />
+        <Stack.Screen
           name="Card3"
           component={Card3}
+          options={{ title: 'UPA Saúde' }}
+        />
+        <Stack.Screen
+          name="Feed3"
+          component={Feed3}
           options={{ title: 'UPA Saúde' }}
         />
       </Stack.Navigator>

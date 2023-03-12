@@ -16,29 +16,23 @@ const Feed1 = ({ navigation, route }) => {
             <Card>
                 <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
                     <Image style={styles.image}
-                        source={require('../logo/pessoas/Mona Lisa.png')}
-                    />  Mona Lisa </Text>
+                        source={require('../logo/pessoas/Mona Lisa.png')} />  Mona Lisa </Text>
                 <Card.Divider />
                 <View style={styles.container}>
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Lanchonete.jpg')}
-                        />
+                            source={require('../logo/fotos/Lanchonete.jpg')} />
                     </View>
-
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Jardim.jpg')}
-                        />
+                            source={require('../logo/fotos/Jardim.jpg')} />
                     </View>
-
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Kids.jpg')}
-                        />
+                            source={require('../logo/fotos/Kids.jpg')} />
                     </View>
                 </View>
                 <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital das clinicas</Text>
@@ -51,21 +45,18 @@ const Feed1 = ({ navigation, route }) => {
             <Card>
                 <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
                     <Image style={styles.image}
-                        source={require('../logo/pessoas/Chiquinha.png')}
-                    />  Chiquinha </Text>
+                        source={require('../logo/pessoas/Chiquinha.png')} />  Chiquinha </Text>
                 <Card.Divider />
                 <View style={styles.container}>
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Lanchonete.jpg')}
-                        />
+                            source={require('../logo/fotos/Lanchonete.jpg')} />
                     </View>
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Lanchonete.jpg')}
-                        />
+                            source={require('../logo/fotos/Lanchonete.jpg')} />
                     </View>
                 </View>
                 <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital das clinicas</Text>
@@ -78,29 +69,23 @@ const Feed1 = ({ navigation, route }) => {
             <Card>
                 <Text style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 10, fontWeight: 'bold' }}>
                     <Image style={styles.image}
-                        source={require('../logo/pessoas/Zequinha.png')}
-                    />  Zequinha </Text>
+                        source={require('../logo/pessoas/Zequinha.png')} />  Zequinha </Text>
                 <Card.Divider />
                 <View style={styles.container}>
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Lanchonete.jpg')}
-                        />
+                            source={require('../logo/fotos/Lanchonete.jpg')} />
                     </View>
-
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Jardim.jpg')}
-                        />
+                            source={require('../logo/fotos/Jardim.jpg')} />
                     </View>
-
                     <View>
                         <Image
                             style={styles.logo}
-                            source={require('../logo/fotos/Kids.jpg')}
-                        />
+                            source={require('../logo/fotos/Kids.jpg')} />
                     </View>
                 </View>
                 <Text style={{ marginBottom: 10, fontWeight: 'bold', }}> <Entypo name="location-pin" size={20} color="black" />Hospital da Criança</Text>

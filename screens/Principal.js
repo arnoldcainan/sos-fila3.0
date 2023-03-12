@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, ScrollView, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native';
+import { View, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { Text, Card, Button } from '@rneui/themed';
 import { AntDesign } from '@expo/vector-icons';  //icone relogio,coracao
 import { Entypo } from '@expo/vector-icons'; //icone local
@@ -9,7 +9,6 @@ const Principal = ({ navigation, route }) => {
   return (
 
     <ScrollView>
-
       <View style={styles.container}>
         <Card>
           <TouchableOpacity
@@ -29,11 +28,10 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-
+          <View style={styles.coracao}>
+            <AntDesign name="heart" size={24} color="red" />
+          </View>
         </Card>
-        <View style={styles.coracao}>
-          <AntDesign name="hearto" size={20} color="red" />
-        </View>
         <Card>
           <TouchableOpacity
             onPress={() => navigation.navigate('Card2')}>
@@ -52,11 +50,10 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-
+          <View style={styles.coracao}>
+            <AntDesign name="hearto" size={24} color="red" />
+          </View>
         </Card>
-        <View style={styles.coracao}>
-          <AntDesign name="hearto" size={20} color="red" />
-        </View>
         <Card>
           <TouchableOpacity
             onPress={() => navigation.navigate('Card3')}>
@@ -75,11 +72,10 @@ const Principal = ({ navigation, route }) => {
                 <Entypo name="location-pin" size={20} color="black" />{' 10 km '} </Text>
             </View>
           </TouchableOpacity>
-
+          <View style={styles.coracao}>
+            <AntDesign name="heart" size={24} color="red" />
+          </View>
         </Card>
-        <View style={styles.coracao}>
-          <AntDesign name="hearto" size={20} color="red" />
-        </View>
       </View>
     </ScrollView>
   );
@@ -129,9 +125,8 @@ const styles = StyleSheet.create({
     width: 140,
   },
   coracao: {
-    marginTop: 0,
+    marginTop: 40,
     alignItems: 'flex-end',
-
   },
 });
 
