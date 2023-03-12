@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Image, StatusBar, SafeAreaView } from 'react-native';
 import { Button, Input, Text } from 'react-native-elements';
 import styles from './styles/MainStyle';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Login from './screens/Login';
